@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, ChevronLeft, Zap } from "lucide-react";
+import { ChevronRight, ChevronLeft, Zap, Compass } from "lucide-react";
 import type { UserProfile } from "@/lib/careerEngine";
 import { computeCareerMatches } from "@/lib/careerEngine";
 import StepEducation from "@/components/wizard/StepEducation";
@@ -251,14 +251,9 @@ function Nav() {
       <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
-            <Zap className="w-3.5 h-3.5 text-white" />
+            <Compass className="w-3.5 h-3.5 text-white" />
           </div>
           <span className="text-sm font-bold text-slate-900">Aspira</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="text-xs font-medium text-slate-400 bg-slate-50 border border-slate-200 rounded-full px-3 py-1 hidden sm:block">
-            Project Origin: BITS Hackathon '25
-          </div>
         </div>
       </div>
     </nav>
