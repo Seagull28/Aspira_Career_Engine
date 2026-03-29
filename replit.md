@@ -48,6 +48,21 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/aspira` — Aspira Career Intelligence Engine
+
+React + Vite frontend-only web app. No backend required — uses LocalStorage for persistence.
+
+- **Hero page**: Bold headline, "Start Assessment" CTA
+- **4-step wizard**: Education → Tech Stack → Soft Skills → Industry Interests
+- **Rule-based engine**: `src/lib/careerEngine.ts` — maps inputs to 10 career paths, outputs top 3 with match %, matched skills, gap skills
+- **Results dashboard**: Match scores (animated progress bars), 3 career cards, strengths/gap analysis
+- **PDF export**: `src/lib/pdfExport.ts` using jsPDF
+- **Persistence**: LocalStorage via `aspira_profile` key
+- **Stack**: React, Tailwind CSS, Framer Motion, Lucide-React, jsPDF
+- **Palette**: Indigo-600 accent, white/slate-50 backgrounds, slate-200 borders
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)

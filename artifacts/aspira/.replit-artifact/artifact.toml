@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Aspira – Career Intelligence Engine"
+version = "1.0.0"
+id = "artifacts/aspira"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23276
+
+[services.development]
+run = "pnpm --filter @workspace/aspira run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aspira", "run", "build" ]
+publicDir = "artifacts/aspira/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23276"
+BASE_PATH = "/"
