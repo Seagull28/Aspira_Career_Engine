@@ -37,11 +37,6 @@ function HeroSection({ onStart }: { onStart: () => void }) {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4"
     >
-      <div className="inline-flex items-center gap-2 text-xs font-semibold text-indigo-600 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-1.5 mb-10">
-        <Zap className="w-3.5 h-3.5" />
-        BITS Hyderabad Hackathon '25
-      </div>
-
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-[1.08] mb-6 max-w-2xl">
         Map your skill set<br />
         <span className="text-indigo-600">to industry demand.</span>
@@ -253,7 +248,7 @@ function Nav() {
           <div className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center">
             <Compass className="w-3.5 h-3.5 text-white" />
           </div>
-          <span className="text-sm font-bold text-slate-900">Aspira</span>
+          <span className="text-base font-black tracking-tight text-slate-900 italic">Aspira</span>
         </div>
       </div>
     </nav>
