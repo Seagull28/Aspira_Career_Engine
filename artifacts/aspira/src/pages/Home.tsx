@@ -246,7 +246,7 @@ function Nav() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-200">
       <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <img src={logoImg} alt="Aspira logo" className="w-8 h-8 object-contain rounded rotate-12" />
+          <img src={logoImg} alt="Aspira logo" className="w-8 h-8 object-contain rounded rotate-[20deg]" />
           <span className="text-base font-black tracking-tight text-slate-900 italic">Aspira</span>
         </div>
       </div>
